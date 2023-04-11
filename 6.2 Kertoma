@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int i, kokonaisluku, kertoma;
+	
+	cout << "Anna kokonaisluku: ";
+	cin >> kokonaisluku;
+	
+	kertoma = 1;
+	for (i = kokonaisluku; i >= 1; i--)
+		kertoma = kertoma * i;
+		cout << "Luvun " << kokonaisluku << " kertoma on " << kertoma << endl;
+	
+}
