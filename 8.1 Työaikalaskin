@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+   int i, koko;
+   double yhteensa = 0, ka, tunnit[30];
+   
+   cout << "Ohjelma laskee yhteen haluamasi ajanjakson aikana tehdyt" << endl;
+   cout << "työtunnit sekä keskimääräisen työpäivän pituuden." << endl; 
+
+   cout << "Kuinka monta päivää:" << endl;
+   cin >> koko;
+   
+   if (koko > 30){
+     cout << "Annoit liian monta päivää!";
+     return 1;
+   }
+   for(i=0;i<koko;i++){
+     cout << "Anna " << i+1<< ". päivän työtunnit:";
+     cin >> tunnit[i];
+     yhteensa+=tunnit[i];
+   }
+   ka = yhteensa/koko;
+
+   cout << "Tehdyt tunnit yhteensä: " << yhteensa << endl;
+   cout << "Keskimääräinen työpäivän pituus: " << ka << endl;
+   cout << "Syötetyt tunnit: ";
+   for (i=0;i<koko;i++){
+     cout << tunnit[i] << " ";
+   }
+   
+   cout << endl;
+   return 0;
+}
