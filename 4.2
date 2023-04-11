@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int kateetti1, kateetti2;
+	double hypotenuusa;
+	
+	cout << "Anna ensimmäinen kateetti:";
+	cin >> kateetti1;
+	
+	cout << "Anna toinen kateetti:";
+	cin >> kateetti2;
+	
+	hypotenuusa =  (kateetti1*kateetti1) + (kateetti2*kateetti2);
+	
+	cout <<"Hypotenuusan pituus: " << sqrt(hypotenuusa) << endl;
+	
+	return 0;
+}
