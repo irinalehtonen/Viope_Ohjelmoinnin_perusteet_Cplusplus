@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+   int summa = 0, luku, lukum = 0;
+   double ka;
+   
+   cout << "Ohjelma laskee koearvosanojen keskiarvon." << endl;
+   cout << "Lukujen syöttämisen lopetus negatiivisella luvulla." << endl;
+   
+   do
+   {
+     cout << "Anna arvosana (4-10)";
+     cin >> luku;
+ 
+     if(luku>=4 && luku <=10)
+     {
+        lukum++;
+        summa = summa+luku;
+     }
+ 
+   }while(luku >= 0);
+
+   ka = (double)summa/lukum;
+   
+   cout << "Ohjelmaan syötetty " << lukum << " arvosanaa." << endl;
+   cout << "Arvosanojen keskiarvo:" << ka << endl;
+} 
