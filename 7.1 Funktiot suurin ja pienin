@@ -1,0 +1,37 @@
+
+
+int pienin(int eka, int toka, int kolmas)
+{
+   int temp;
+   
+   if (eka <= toka){ 
+     temp = eka;
+   }else{
+     temp = toka;
+   }
+   eka = temp;
+   if (eka <= kolmas){
+     temp = eka;
+   }else{
+     temp = kolmas;
+   }
+   return temp;   
+}
+
+int suurin(int eka, int toka, int kolmas)
+{
+   int temp;
+   
+   if (eka >= toka){ 
+     temp = eka;
+   }else{
+     temp = toka;
+   }
+   eka = temp;
+   if (eka >= kolmas){
+     temp = eka;
+   }else{
+     temp = kolmas;
+   }
+   return temp;   
+}
