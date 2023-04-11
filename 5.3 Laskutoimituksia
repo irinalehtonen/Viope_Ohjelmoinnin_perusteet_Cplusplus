@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int laskutoimitus, ekaluku, tokaluku;
+	
+	cout << "Käytössäsi on seuraavat laskutoimitukset:\n";
+	cout << "1: vähennyslasku\n";
+	cout << "2: yhteenlasku\n";
+	cout << "3: kertolasku\n";
+	cout << "4: osamäärä\n";
+	cout << "5: jakojäännös\n";
+		
+	cout << "Valitse laskutoimitus: "; 
+	cin >> laskutoimitus;
+	
+	cout << "Anna eka luku: ";
+	cin >> ekaluku;
+	
+	cout << "Anna toinen luku: ";
+	cin >> tokaluku;
+	
+	switch(laskutoimitus)
+	{
+		case 1:
+			cout << ekaluku << "-" << tokaluku << " = " << ekaluku - tokaluku << endl;
+			break;
+		case 2:
+			cout << ekaluku << "+" << tokaluku << " = " << ekaluku + tokaluku << endl;
+			break;
+		case 3:
+			cout << ekaluku << "*" << tokaluku << " = " << ekaluku * tokaluku << endl;
+			break;
+		case 4:
+			cout << ekaluku << "/" << tokaluku << " = " << ekaluku / tokaluku << endl;
+			break;
+		case 5:
+			cout << ekaluku << "%" << tokaluku << " = " << ekaluku % tokaluku << endl;
+			break;
+		default:
+			cout << "Paina ensi kerralla lukua 1-5!" << endl;
+	}
+	return 0;	
+}
